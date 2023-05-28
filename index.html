@@ -5,131 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
     <title>한,미,일 야구장 크기 비교</title>
 </head>
 <body>
     <div class="side-bar">
         <div class="league-select">
-            <button class="league-select--MLB league" type="button">
+            <button id="league-select--MLB" class="league" type="button">
                 MLB
             </button>
-            <button class="league-select--NPB league" type="button">
+            <button id="league-select--NPB" class="league" type="button">
                 NPB
             </button>
-            <button class="league-select--KBO league" type="button">
+            <button id="league-select--KBO" class="league" type="button">
                 KBO
             </button>
         </div>
-        <div class="ballpark-list">
+        <ul class="ballpark-list--MLB ballpark-list">
             <li class="ballpark-name">
-                
+                <span>Chase Field</span>
+                <span>Arizona Diamondbacks</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Truist Park</span>
+                <span>Atlanta Braves</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Oriole Park at Camden Yards</span>
+                <span>Baltimore Orioles</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Fenway Park</span>
+                <span>Boston Red Sox</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Guaranteed Rate Field</span>
+                <span>Chicago White Sox</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Wrigley Field</span>
+                <span>Chicago Cubs</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Great American Ball Park</span>
+                <span>Cincinnati Reds</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Progressive Field</span>
+                <span>Cleveland Guardians</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Coors Field</span>
+                <span>Colorado Rockies</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Comerica Park</span>
+                <span>Detroit Tigers</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Minute Maid Park</span>
+                <span>Houston Astros</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Kauffman Stadium</span>
+                <span>Kansas City Royals</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Angel Stadium of Anaheim</span>
+                <span>Los Angeles Angels</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Dodger Stadium</span>
+                <span>Los Angeles Dodgers</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>loanDepot park</span>
+                <span>Miami Marlins</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>American Family Field</span>
+                <span>Milwaukee Brewers</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Target Field</span>
+                <span>Minnesota Twins</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Yankee Stadium</span>
+                <span>New York Yankees</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Citi Field</span>
+                <span>New York Mets</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>RingCentral Coliseum</span>
+                <span>Oakland Athletics</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Citizens Bank Park</span>
+                <span>Philadelphia Phillies</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>PNC Park</span>
+                <span>Pittsburgh Pirates</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Petco Park</span>
+                <span>San Diego Padres</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Oracle Park</span>
+                <span>San Francisco Giants</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>T-Mobile Park</span>
+                <span>Seattle Mariners</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Busch Stadium</span>
+                <span>St. Louis Cardinals</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Tropicana Field</span>
+                <span>Tampa Bay Rays</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Globe Life Field</span>
+                <span>Texas Rangers</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Rogers Centre</span>
+                <span>Toronto Blue Jays</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Nationals Park</span>
+                <span>Washington Nationals</span>
+            </li>
+        </ul>
+        <ul class="ballpark-list--NPB ballpark-list">
+            <li class="ballpark-name">
+                <span>ZOZO Marine Stadium</span>
+                <span>Chiba Lotte Marines</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Nagoya Dome</span>
+                <span>Chunichi Dragons</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>PayPay Dome</span>
+                <span>Fukuoka SoftBank Hawks</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Koshien Stadium</span>
+                <span>Hanshin Tigers</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Mazda Zoom-Zoom Stadium Hiroshima</span>
+                <span>Hiroshima Toyo Carp</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Es Con Field Hokkaido</span>
+                <span>Hokkaido Nippon-Ham Fighters</span>
             </li>
             <li class="ballpark-name">
-                
+                <span>Kyocera Dome Osaka</span>
+                <span>Orix Buffaloes</span>
             </li>
-        </div>
+            <li class="ballpark-name">
+                <span>MetLife Dome</span>
+                <span>Saitama Seibu Lions</span>
+            </li>
+            <li class="ballpark-name">
+                <span>Rakuten Seimei Park Miyagi</span>
+                <span>Tohoku Rakuten Golden Eagles</span>
+            </li>
+            <li class="ballpark-name">
+                <span>Meiji Jingu Stadium</span>
+                <span>Tokyo Yakult Swallows</span>
+            </li>
+            <li class="ballpark-name">
+                <span>Yokohama Stadium</span>
+                <span>Yokohama DeNA BayStars</span>
+            </li>
+            <li class="ballpark-name">
+                <span>Tokyo Dome</span>
+                <span>Yomiuri Giants</span>
+            </li>
+        </ul>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

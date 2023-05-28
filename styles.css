@@ -1,3 +1,7 @@
+.hidden{
+    display: none;
+}
+
 .side-bar{
   position: fixed;
   margin: 25px;
@@ -23,29 +27,27 @@
     text-decoration: none;
     font-weight: 600;
     transition: 0.25s;
+    font-size: 15px;
+    letter-spacing: 2px;
 }
 
 .league:hover{
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     transform: scale(1.2);
     cursor: pointer;
 }
 
-.league:active{
-    transform: scale(1.5)
-}
-
-.league-select--MLB{
+#league-select--MLB{
     background: linear-gradient(45deg, #041C3F, #b50c38);
     color: white;
 }
 
-.league-select--NPB{
+#league-select--NPB{
     background: linear-gradient(0deg, #008AD0, #cc0b18);
     color: white;
 }
 
-.league-select--KBO{
+#league-select--KBO{
     background: linear-gradient(45deg, #e51f30, #0a81bb, #fcc40f);
     color: white;
 }
@@ -58,7 +60,6 @@
     width: 26.7vw;
     right: 0;
     bottom: 0;
-    list-style-type: none;
 }
 
 .ballpark-list::-webkit-scrollbar {
@@ -78,9 +79,28 @@
     background-color: #555;
   }
 
+  .ballpark-list--NPB{
+    display: none;
+  }
+
+  
 .ballpark-name{
+    display: flex;
+    flex-direction: column;
     height: 10vh;
     box-sizing: border-box;
     padding: 0;
     border-bottom: 1.5px solid gray;
+}
+
+.ballpark-name span:first-child{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 7px;
+}
+
+.ballpark-name span:nth-child(2){
+    opacity: 50%;
+    font-size: 17px;
+    margin: 7px;
 }

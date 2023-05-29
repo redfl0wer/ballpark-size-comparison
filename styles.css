@@ -2,11 +2,24 @@
   display: none;
 }
 
+.ballpark{
+  background-color: #0e804d;
+  width: 68vw;
+  height: 85vh;
+  opacity: 70%;
+  position: fixed;
+  bottom: 0;
+  margin: 25px;
+  border-radius: 3%;
+  display: flex;
+  justify-content: center;
+}
+
 .side-bar{
   position: fixed;
   margin: 25px;
   height: 95vh;
-  width: 26.7vw;
+  width: 26.7vw; 
   top: 0;
   right: 0;
   bottom: 100px;

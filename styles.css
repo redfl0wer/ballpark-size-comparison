@@ -1,5 +1,5 @@
 .hidden{
-    display: none;
+  display: none;
 }
 
 .side-bar{
@@ -13,94 +13,101 @@
 }
 
 .league-select{
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .league{
-    position: relative;
-    border: none;
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.25s;
-    font-size: 15px;
-    letter-spacing: 2px;
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  font-size: 15px;
+  letter-spacing: 2px;
 }
 
 .league:hover{
-    letter-spacing: 4px;
-    transform: scale(1.2);
-    cursor: pointer;
+  letter-spacing: 4px;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 #league-select--MLB{
-    background: linear-gradient(45deg, #041C3F, #b50c38);
-    color: white;
+  background: linear-gradient(45deg, #041C3F, #b50c38);
+  color: white;
 }
 
 #league-select--NPB{
-    background: linear-gradient(0deg, #008AD0, #cc0b18);
-    color: white;
+  background: linear-gradient(0deg, #008AD0, #cc0b18);
+  color: white;
 }
 
 #league-select--KBO{
-    background: linear-gradient(45deg, #e51f30, #0a81bb, #fcc40f);
-    color: white;
+  background: linear-gradient(45deg, #e51f30, #0a81bb, #fcc40f);
+  color: white;
 }
 
 .ballpark-list{
-    overflow-y: scroll;
-    position: fixed;
-    margin: 20px;
-    height: 88vh;
-    width: 26.7vw;
-    right: 0;
-    bottom: 0;
+  overflow-y: scroll;
+  position: fixed;
+  margin: 20px;
+  height: 88vh;
+  width: 26.7vw;
+  right: 0;
+  bottom: 0;
 }
 
 .ballpark-list::-webkit-scrollbar {
-    width: 8px; 
-  }
+  width: 8px; 
+}
   
-  .ballpark-list::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-  }
+.ballpark-list::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
   
-  .ballpark-list::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 4px; 
-  }
+.ballpark-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px; 
+}
   
-  .ballpark-list::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-  }
+.ballpark-list::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
 
-  .ballpark-list--NPB{
-    display: none;
-  }
+.ballpark-list--NPB{
+  display: none;
+}
 
+.ballpark-list--KBO{
+  display: none;
+}
   
 .ballpark-name{
-    display: flex;
-    flex-direction: column;
-    height: 10vh;
-    box-sizing: border-box;
-    padding: 0;
-    border-bottom: 1.5px solid gray;
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  box-sizing: border-box;
+  padding: 0;
+  border-bottom: 1.5px solid gray;
+  position: relative;
+  overflow: hidden;
 }
 
 .ballpark-name span:first-child{
-    font-weight: bold;
-    font-size: 22px;
-    margin: 7px;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 7px;
+  white-space: nowrap;
 }
 
 .ballpark-name span:nth-child(2){
-    opacity: 50%;
-    font-size: 17px;
-    margin: 7px;
+  opacity: 50%;
+  font-size: 17px;
+  margin: 7px;
+  white-space: nowrap;
 }
